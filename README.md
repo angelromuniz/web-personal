@@ -1,5 +1,7 @@
 # Web personal
 
+![Portada](docs/portada.png)
+
 Página web personal hecha a mano con HTML5 y CSS3, sin frameworks ni plantillas. Proyecto del módulo de Lenguajes de Marcas de 1.º de DAM.
 
 ## Funcionalidades
