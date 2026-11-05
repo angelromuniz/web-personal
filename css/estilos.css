@@ -1,0 +1,355 @@
+/* ===== Variables ===== */
+:root {
+    --color-fondo: #ffffff;
+    --color-fondo-alterno: #f2f5f9;
+    --color-texto: #1f2a37;
+    --color-suave: #5b6b7f;
+    --color-principal: #2a4a73;
+    --color-acento: #3d7bd9;
+    --radio: 10px;
+    --sombra: 0 4px 16px rgba(31, 42, 55, 0.08);
+    --ancho-max: 1100px;
+}
+
+/* ===== Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--color-acento);
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: var(--ancho-max);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: var(--color-principal);
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 26px;
+    border: none;
+    border-radius: var(--radio);
+    background-color: var(--color-acento);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.boton:hover {
+    background-color: var(--color-principal);
+}
+
+/* ===== Cabecera y menu ===== */
+.cabecera {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--color-principal);
+}
+
+.cabecera__contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+
+.logo {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.logo span {
+    color: #8fb8f0;
+}
+
+.menu ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: #8fb8f0;
+}
+
+/* el checkbox no se ve, solo el icono */
+.menu-toggle {
+    display: none;
+}
+
+.menu-icono {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-icono span {
+    width: 26px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+/* ===== Hero ===== */
+.hero {
+    padding: 110px 0 100px;
+    background: linear-gradient(135deg, var(--color-principal), #1b2b42);
+    color: #fff;
+}
+
+.hero__saludo {
+    color: #8fb8f0;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    line-height: 1.15;
+    margin: 6px 0 18px;
+}
+
+.hero__texto {
+    max-width: 600px;
+    margin-bottom: 32px;
+    color: #d6e0ec;
+    font-size: 1.1rem;
+}
+
+/* ===== Secciones ===== */
+.seccion {
+    padding: 80px 0;
+}
+
+.seccion--alterna {
+    background-color: var(--color-fondo-alterno);
+}
+
+.sobre-mi p {
+    max-width: 760px;
+    margin-bottom: 16px;
+    color: var(--color-suave);
+}
+
+/* ===== Tarjetas (Grid) ===== */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.tarjeta {
+    background-color: var(--color-fondo);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 24px;
+    transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+}
+
+.tarjeta h3 {
+    margin-bottom: 12px;
+    color: var(--color-principal);
+}
+
+.tarjeta ul {
+    list-style: none;
+    color: var(--color-suave);
+}
+
+.tarjeta li::before {
+    content: "▸ ";
+    color: var(--color-acento);
+}
+
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    border-top: 4px solid var(--color-acento);
+}
+
+.proyecto p {
+    color: var(--color-suave);
+    margin-bottom: 12px;
+}
+
+.proyecto a {
+    margin-top: auto;
+    font-weight: 600;
+}
+
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.etiquetas span {
+    font-size: 0.8rem;
+    padding: 2px 10px;
+    border-radius: 20px;
+    background-color: #e3ecf8;
+    color: var(--color-principal);
+}
+
+/* ===== Formulario ===== */
+.contacto > p {
+    color: var(--color-suave);
+    margin-bottom: 24px;
+}
+
+.formulario {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-weight: 600;
+}
+
+.campo input,
+.campo textarea {
+    padding: 12px;
+    border: 1px solid #c9d3df;
+    border-radius: var(--radio);
+    font: inherit;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: 2px solid var(--color-acento);
+    border-color: transparent;
+}
+
+/* borde rojo cuando el campo no es valido y ya se ha escrito algo */
+.campo input:not(:placeholder-shown):invalid,
+.campo textarea:not(:placeholder-shown):invalid {
+    border-color: #d64545;
+}
+
+.formulario .boton {
+    align-self: flex-start;
+}
+
+.redes {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-top: 32px;
+    font-weight: 600;
+}
+
+/* ===== Pie ===== */
+.pie {
+    padding: 24px 0;
+    text-align: center;
+    background-color: var(--color-principal);
+    color: #d6e0ec;
+    font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+}
+
+/* Movil */
+@media (max-width: 640px) {
+    .menu-icono {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background-color: var(--color-principal);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 0 20px;
+    }
+
+    .menu li {
+        padding: 14px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .menu-toggle:checked ~ .menu {
+        max-height: 300px;
+    }
+
+    .hero {
+        padding: 70px 0 60px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .seccion {
+        padding: 56px 0;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .redes {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

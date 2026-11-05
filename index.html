@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web personal de Ángel Rodríguez Muñiz, estudiante de Desarrollo de Aplicaciones Multiplataforma">
+    <title>Ángel Rodríguez Muñiz | Desarrollador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header class="cabecera">
+        <div class="contenedor cabecera__contenido">
+            <a href="#inicio" class="logo">Ángel<span>.dev</span></a>
+
+            <!-- Menu hamburguesa solo con CSS: el checkbox abre y cierra el menu en movil -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icono" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </label>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="contenedor">
+                <p class="hero__saludo">Hola, soy</p>
+                <h1>Ángel Rodríguez Muñiz</h1>
+                <p class="hero__texto">
+                    Estudiante de <strong>Desarrollo de Aplicaciones Multiplataforma</strong> en Sevilla.
+                    Vengo del mundo de las telecomunicaciones y ahora me dedico a crear aplicaciones.
+                </p>
+                <a href="#proyectos" class="boton">Ver mis proyectos</a>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="seccion">
+            <div class="contenedor sobre-mi">
+                <h2>Sobre mí</h2>
+                <p>
+                    Soy Técnico Superior en Sistemas de Telecomunicaciones e Informáticos y he trabajado varios años
+                    en el sector de las redes de fibra óptica (FTTH). Ese trabajo me enseñó a resolver problemas
+                    sobre la marcha y a trabajar en equipo.
+                </p>
+                <p>
+                    Ahora estudio el Grado Superior de DAM porque lo que más me gusta es programar: me interesa
+                    el desarrollo de aplicaciones de principio a fin, desde la base de datos hasta la interfaz,
+                    tanto de escritorio como móviles.
+                </p>
+            </div>
+        </section>
+
+        <section id="habilidades" class="seccion seccion--alterna">
+            <div class="contenedor">
+                <h2>Habilidades</h2>
+                <div class="tarjetas tarjetas--habilidades">
+                    <article class="tarjeta">
+                        <h3>Lenguajes</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>Kotlin</li>
+                            <li>SQL</li>
+                            <li>HTML y CSS</li>
+                        </ul>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>Desarrollo</h3>
+                        <ul>
+                            <li>Programación orientada a objetos</li>
+                            <li>Aplicaciones Android</li>
+                            <li>Interfaces con JavaFX</li>
+                            <li>JDBC e Hibernate</li>
+                        </ul>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>Herramientas</h3>
+                        <ul>
+                            <li>Git y GitHub</li>
+                            <li>MySQL</li>
+                            <li>IntelliJ IDEA y Android Studio</li>
+                            <li>Windows, Linux y macOS</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion">
+            <div class="contenedor">
+                <h2>Proyectos</h2>
+                <div class="tarjetas">
+                    <article class="tarjeta proyecto">
+                        <h3>Gestor de biblioteca</h3>
+                        <p>Aplicación de consola para gestionar libros, socios y préstamos.</p>
+                        <p class="etiquetas"><span>Java</span><span>POO</span></p>
+                        <a href="https://github.com/angelromuniz/gestor-biblioteca" target="_blank" rel="noopener">Ver código →</a>
+                    </article>
+                    <article class="tarjeta proyecto">
+                        <h3>Tres en raya</h3>
+                        <p>Juego con interfaz gráfica, para dos jugadores o contra la máquina.</p>
+                        <p class="etiquetas"><span>Java</span><span>JavaFX</span></p>
+                        <a href="https://github.com/angelromuniz/tres-en-raya" target="_blank" rel="noopener">Ver código →</a>
+                    </article>
+                    <article class="tarjeta proyecto">
+                        <h3>BD tienda online</h3>
+                        <p>Diseño completo de una base de datos relacional con consultas, vistas y triggers.</p>
+                        <p class="etiquetas"><span>MySQL</span></p>
+                        <a href="https://github.com/angelromuniz/bbdd-tienda-online" target="_blank" rel="noopener">Ver código →</a>
+                    </article>
+                    <article class="tarjeta proyecto">
+                        <h3>Gestor de inventario</h3>
+                        <p>Gestión de productos, proveedores y stock conectada a MySQL.</p>
+                        <p class="etiquetas"><span>Java</span><span>JDBC</span><span>Hibernate</span></p>
+                        <a href="https://github.com/angelromuniz/gestor-inventario" target="_blank" rel="noopener">Ver código →</a>
+                    </article>
+                    <article class="tarjeta proyecto">
+                        <h3>App de tareas</h3>
+                        <p>App Android para organizar tareas con prioridad y fecha límite.</p>
+                        <p class="etiquetas"><span>Kotlin</span><span>Android</span><span>Room</span></p>
+                        <a href="https://github.com/angelromuniz/app-tareas-android" target="_blank" rel="noopener">Ver código →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion seccion--alterna">
+            <div class="contenedor contacto">
+                <h2>Contacto</h2>
+                <p>¿Quieres hablar conmigo? Escríbeme y te respondo lo antes posible.</p>
+
+                <!-- La validacion se hace con atributos de HTML5 (required, type, minlength) -->
+                <form class="formulario" action="mailto:angelromuniz@gmail.com" method="post" enctype="text/plain">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="2" placeholder="Tu nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+                    </div>
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required minlength="10" placeholder="Cuéntame..."></textarea>
+                    </div>
+                    <button type="submit" class="boton">Enviar</button>
+                </form>
+
+                <ul class="redes">
+                    <li><a href="mailto:angelromuniz@gmail.com">Email</a></li>
+                    <li><a href="https://github.com/angelromuniz" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/angel-rodriguez-muñiz-276052448" target="_blank" rel="noopener">LinkedIn</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>© 2026 Ángel Rodríguez Muñiz · Sevilla</p>
+    </footer>
+
+</body>
+</html>
